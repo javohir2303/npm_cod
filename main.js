@@ -1,8 +1,12 @@
-function chegirma(foiz) {
-    return function(sum) {
-        return sum - (sum * foiz / 100);
+function juftSonlar(n) {
+    if (n > 100){
+        return
     }
+    if (n % 2 === 0){
+        console.log(n)
+    }
+    juftSonlar(n + 1)
 }
 
-const onFoizliChegirma = chegirma(20)
-console.log(onFoizliChegirma(500))
+let number = 0
+juftSonlar(number)
